@@ -1,0 +1,36 @@
+firebase.auth().createUserWithEmailAndPassword('unni@zenleaf.com', 'kmcdka09').catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
+
+firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
+I {F: 0, ka: undefined, o: I, fa: null, Ma: null…}
+firebase.auth().currentUser
+
+W {U: Array[0], v: "AIzaSyDOhCTuICEr0PGIlk3Os8fLYtX8vx4_g3k", ea: "[DEFAULT]", X: "hello-world-6b6d8.firebaseapp.com", f: T…}
+firebase.auth().currentUser
+
+W {U: Array[0], v: "AIzaSyDOhCTuICEr0PGIlk3Os8fLYtX8vx4_g3k", ea: "[DEFAULT]", X: "hello-world-6b6d8.firebaseapp.com", f: T…}
+firebase.auth().signOut()
+
+var provider = new firebase.auth.GoogleAuthProvider();
+provider.addScope('https://www.googleapis.com/auth/plus.login');
+firebase.auth().signInWithPopup(provider).then(function(result) {
+  var user = result.user;
+}).catch(function(error) {
+});
+
+function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+}

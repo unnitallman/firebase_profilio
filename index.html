@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+    <script src="initialize_firebase.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Website CSS style -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!-- Website Font style -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
+
+    <title>Profilio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row main">
+
+        <!-- Profile Form -->
+        <div id="profile_form">
+          <div class="panel-heading">
+             <div class="panel-title text-center">
+                <h1 class="title">Profilio</h1>
+                <hr />
+              </div>
+          </div>
+          <div class="main-login main-center">
+            <form class="form-horizontal" method="post" action="#">
+
+              <div class="form-group">
+                <label for="name" class="cols-sm-2 control-label">Your Name</label>
+                <div class="cols-sm-10">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                <div class="cols-sm-10">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="cols-sm-2 control-label">Your Phone</label>
+                <div class="cols-sm-10">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" name="phone" id="phone"  placeholder="Phone Number"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="facebook" class="cols-sm-2 control-label">Your Facebook</label>
+                <div class="cols-sm-10">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-facebook fa" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" name="facebook" id="facebook"  placeholder="Facebook profile URL"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group ">
+                <button type="button" id="save" class="btn btn-primary btn-lg btn-block login-button">Save</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <!-- End of Profile Form -->
+
+        <!-- Welcome Page -->
+        <div id="welcome_page">
+          <form class="form-signin mg-btm main-login main-center">
+            <h3 class="heading-desc">
+              Welcome to Profilio
+            </h3>
+            <div class="social-box">
+              <div class="row mg-btm">
+               <div class="col-md-12">
+                <a href="#" id="google_login" class="btn btn-primary btn-block">
+                  <i class="icon-facebook"></i> Login
+                </a>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <!-- End of Welcome Page -->
+
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
